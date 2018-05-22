@@ -1,0 +1,265 @@
+*, *: before, *: after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dadada;
+  color: #fff;
+  display: block;
+  font-family: "Roboto";
+}
+
+section {
+  padding-bottom: 43px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  float: left;
+  font-size: 24px;
+  padding: 23px 0 11px 0;
+  width: 256px;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 20px;
+
+}
+
+h1, h2, p {
+    margin-left: 0px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: left;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.status-bar {
+  background: url(../images/status-bar.png) no-repeat center;
+  background-size: cover;
+  height: 21px;
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.bus-stop-box {
+  background-color: #009688;
+  filter: drop-shadow(0 1px 4px #555);
+  height: 87px;
+  z-index: 5;
+}
+
+.bus-stop-box-interior {
+  height: 87px;
+  margin: auto;
+  width: 87.6%;
+}
+
+.back-arrow {
+  background: url(../images/back-arrow.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  float: left;
+  height: 16px;
+  margin: 46px 20px 23px 0px;
+  width: 16px;
+  z-index: 10;
+}
+
+.bus-stop-name {
+  margin: auto;
+  float: left;
+  padding: 44px 0 23px 0;
+  width: 240px;
+}
+
+.bus:hover {
+  background-color: #268335;
+  /*color: #3a4241;
+  font-weight: 500;*/
+}
+
+.top {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.group h1 {
+  color: #3a4241;
+  font-size: 16px;
+  font-weight: 600;
+  margin: auto;
+  text-transform: uppercase;
+  padding: 10px 0;
+  width: 87.6%;
+}
+
+.bus {
+    background-color: #3a4241;
+    z-index: -1;
+  }
+
+.businfo {
+  height: 104px;
+  margin: auto;
+  width: 87.6%;
+}
+
+
+
+.busnumber {
+  font-weight: 400;
+  width: 175px;
+}
+
+.destination {
+  font-weight: 400;
+  text-align: left;
+  padding-top: 63px;
+  width: 175px;
+}
+
+.frequency {
+    float: right;
+    margin: 23px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 38px;
+  }
+
+.reroute {
+  background-color: #F0D172;
+}
+
+.na {
+    float: right;
+    margin: 23px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 38px;
+  }
+
+.outofservice {
+  background-color: #F18080;
+}
+
+.resumes {
+  float: right;
+  margin: 23px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 55px;
+}
+
+.mins {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+.navbar {
+    background: url(../images/navbar.png) no-repeat center;
+    background-size: cover;
+    bottom: 0;
+    height: 43px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+
+  /* Nexus Tablets */
+
+  @media screen and (min-width: 601px) {
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p, .group h1 {
+  font-size: 20px;
+}
+
+.back-arrow {
+  height: 18px;
+  width: 18px;
+}
+
+.busnumber {
+  width: 300px;
+}
+
+.frequency, .na, .resumes {
+  margin-top: 24px;
+}
+
+.destination {
+  padding-top: 61px;
+  width: 300px;
+}
+}
+
+/* iPad */
+
+@media screen and (min-width: 768px) {
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p, .group h1 {
+  font-size: 24px;
+}
+
+.back-arrow {
+  height: 19px;
+  margin: 43px 20px 23px 0px;
+  width: 19px;
+}
+
+.bus-stop-name {
+  padding: 40px 0 23px 0;
+  width: 400px;
+}
+
+.busnumber {
+  width: 400px;
+}
+
+.frequency, .na, .resumes {
+  margin-top: 22px;
+  width: 75px;
+}
+
+.destination {
+  padding-top: 59px;
+  width: 400px;
+}
+
+.mins {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
