@@ -9,140 +9,178 @@
   </head>
 <!-- body starts here -->
   <body>
-    <section class="container">
+    <main class="container">
 <!-- Status Bar Image -->
       <div class="status-bar">
       </div>
 <!-- Bus Stop Name -->
-      <div class="bus-stop-box">
+      <section class="bus-stop-box">
         <div class="bus-stop-box-interior">
-          <div class="back-arrow">
-          </div>
-          <h1 class="bus-stop-name">Washington and State</h1>
+          <figure class="back-arrow">
+          </figure>
+          <form>
+            <input class="input start" type="text" value="Washington and State">
+            <input class="input end" type="text" value="Destination">
+          </form>
+          <figure class="switch-arrows">
+          </figure>
         </div>
-      </div>
+      </section>
+<!-- Map -->
+      <figure class="map">
+      </figure>
 <!-- Eastbound -->
-      <div class="group eastbound">
-        <h1>Eastbound</h1>
-        <div class="bus">
+      <section class="group eastbound">
+        <section class="bus">
           <div class="businfo top">
-            <h2 class="busnumber">60</h2>
-            <div class="frequency">
-              <h3>every</h3>
-              <h3 class="mins">20</h3>
-              <h3>mins</h3>
-            </div>
-            <p class="destination">Randolph/Harbor Dr</p>
+            <ul>
+              <li class="busnumber">60</li>
+              <ul class="frequency">
+                <div class="arrives-circle red">
+                  <li class="mins">2</li>
+                  <li class="mins-text">mins</li>
+                </div>
+              </ul>
+              <li class="destination">Randolph/Harbor Dr</li>
+              <li class="direction">Eastbound</li>
+              <li class="next">next 18 mins</li>
+            </ul>
           </div>
-        </div>
-        <div class="bus">
-          <div class="businfo">
-            <h2 class="busnumber">124</h2>
-            <div class="frequency">
-              <h3>every</h3>
-              <h3 class="mins">10</h3>
-              <h3>mins</h3>
-            </div>
-            <p class="destination">Navy Pier</p>
+        </section>
+        <section class="bus">
+          <div class="businfo top">
+            <ul>
+              <li class="busnumber">124</li>
+              <ul class="frequency">
+                <div class="arrives-circle yellow">
+                  <li class="mins">6</li>
+                  <li class="mins-text">mins</li>
+                </div>
+              </ul>
+              <li class="destination">Navy Pier</li>
+              <li class="direction">Eastbound</li>
+              <li class="next">next 4 mins</li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 <!-- Northbound -->
-      <div class="group northbound">
-        <h1>Northbound</h1>
-        <div class="bus">
-          <div class="businfo">
-            <h2 class="busnumber">151</h2>
-            <div class="frequency">
-              <h3>every</h3>
-              <h3 class="mins">16</h3>
-              <h3>mins</h3>
-            </div>
-            <p class="destination">Devon/Clark</p>
+      <section class="group northbound">
+        <section class="bus">
+          <div class="businfo top">
+            <ul>
+              <li class="busnumber">151</li>
+              <ul class="frequency">
+                <div class="arrives-circle green">
+                  <li class="mins">12</li>
+                  <li class="mins-text">mins</li>
+                </div>
+              </ul>
+              <li class="destination">Devon/Clark</li>
+              <li class="direction">Northbound</li>
+              <li class="next">next 4 mins</li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 <!-- Southbound -->
-      <div class="group southbound">
-        <h1>Southbound</h1>
-        <div class="bus">
+      <section class="group southbound">
+        <section class="bus">
           <div class="businfo top">
-            <h2 class="busnumber">J14</h2>
-            <div class="frequency">
-              <h3>every</h3>
-              <h3 class="mins">15</h3>
-              <h3>mins</h3>
-            </div>
-            <p class="destination">103rd/Stony Island</p>
+            <ul>
+              <li class="busnumber">J14</li>
+              <ul class="frequency">
+                <div class="arrives-circle green">
+                  <li class="mins">13</li>
+                  <li class="mins-text">mins</li>
+                </div>
+              </ul>
+              <li class="destination">103rd/Stony Island</li>
+              <li class="direction">Southbound</li>
+              <li class="next">next 2 mins</li>
+            </ul>
           </div>
-        </div>
-        <div class="bus">
-          <div class="businfo">
-            <h2 class="busnumber">124</h2>
-            <div class="frequency">
-              <h3>every</h3>
-              <h3 class="mins">10</h3>
-              <h3>mins</h3>
-            </div>
-            <p class="destination">Navy Pier</p>
+        </section>
+        <section class="bus">
+          <div class="businfo top">
+            <ul>
+              <li class="busnumber">124</li>
+              <ul class="frequency">
+                <div class="arrives-circle green">
+                  <li class="mins">10</li>
+                  <li class="mins-text">mins</li>
+                </div>
+              </ul>
+              <li class="destination">Navy Pier</li>
+              <li class="direction">Southbound</li>
+              <li class="next">next 20 mins</li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 <!-- Reroute -->
-      <div class="group reroute">
-        <h1>Reroute</h1>
-        <div class="bus">
-          <div class="businfo">
-            <h2 class="busnumber">6x</h2>
-            <div class="na">
-              <h3></h3>
-              <h3 class="mins">N/A</h3>
-              <h3></h3>
-            </div>
-            <p class="destination">Jackson Park Express</p>
+      <section class="group">
+        <section class="bus">
+          <div class="businfo top">
+            <ul>
+              <li class="busnumber">6x</li>
+              <ul class="na">
+                  <li class="mins">N/A</li>
+              </ul>
+              <li class="destination">Jackson Park Express</li>
+              <li class="direction reroute">reroute</li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 <!-- Out of Service -->
-      <div class="group outofservice">
-        <h1>Out of Service</h1>
-        <div class="bus">
+      <section class="group outofservice">
+        <section class="bus">
           <div class="businfo top">
-            <h2 class="busnumber">4</h2>
-            <div class="resumes">
-              <h3>resumes</h3>
-              <h3 class="mins">12:10</h3>
-              <h3>am</h3>
-            </div>
-            <p class="destination">Cottage Grove</p>
+            <ul>
+              <li class="busnumber out-of-service">4</li>
+              <ul class="resumes">
+                <li class="mins-text above">resumes</li>
+                <li class="mins time">12:10</li>
+                <li class="mins-text">am</li>
+              </ul>
+              <li class="destination out-of-service">Cottage Grove</li>
+              <li class="direction out-of-service">Out of Service</li>
+            </ul>
           </div>
-        </div>
-        <div class="bus">
+        </section>
+        <section class="bus">
           <div class="businfo top">
-            <h2 class="busnumber">20</h2>
-            <div class="resumes">
-              <h3 class=>Resumes</h3>
-              <h3 class="mins">12:10</h3>
-              <h3>am</h3>
-            </div>
-            <p class="destination">Madison</p>
+            <ul>
+              <li class="busnumber out-of-service">20</li>
+              <ul class="resumes">
+                <li class="mins-text above">resumes</li>
+                <li class="mins time">12:10</li>
+                <li class="mins-text">am</li>
+              </ul>
+              <li class="destination out-of-service">Madison</li>
+              <li class="direction out-of-service">Out of Service</li>
+            </ul>
           </div>
-        </div>
-        <div class="bus">
+        </section>
+        <section class="bus">
           <div class="businfo">
-            <h2 class="busnumber">157</h2>
-            <div class="resumes">
-              <h3>Resumes</h3>
-              <h3 class="mins">6:00</h3>
-              <h3>am</h3>
-            </div>
-            <p class="destination">Streeterville/Taylor</p>
+            <ul>
+              <li class="busnumber out-of-service">157</li>
+              <ul class="resumes">
+                <li class="mins-text above">resumes</li>
+                <li class="mins time">6:00</li>
+                <li class="mins-text">am</li>
+              </ul>
+              <li class="destination out-of-service">Streeterville/Taylor</li>
+              <li class="direction out-of-service">Out of Service</li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </section>
 <!-- Navbar -->
-    <div class="navbar">
-    </div>
+      <div class="navbar">
+      </div>
+    </main>
   </body>
 </html>

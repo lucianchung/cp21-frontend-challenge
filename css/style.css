@@ -9,7 +9,7 @@ body {
   font-family: "Roboto";
 }
 
-section {
+main {
   padding-bottom: 43px;
 }
 
@@ -27,7 +27,6 @@ h2 {
 h3 {
   font-size: 12px;
   line-height: 20px;
-
 }
 
 h1, h2, p {
@@ -42,27 +41,34 @@ p {
 
 .container {
   margin: 0 auto;
+  max-width: 500px;
   width: 100%;
 }
 
 .status-bar {
   background: url(../images/status-bar.png) no-repeat center;
   background-size: cover;
-  height: 21px;
-  position:fixed;
+  height: 23px;
+  margin: -410px 0 0 0;
+  max-width: 500px;
+  position: fixed;
   width: 100%;
   z-index: 10;
 }
 
 .bus-stop-box {
   background-color: #009688;
-  filter: drop-shadow(0 1px 4px #555);
-  height: 87px;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 45%));
+  height: 130px;
+  margin: -410px 0 0 0;
+  max-width: 500px;
+  position: fixed;
+  width: 100%;
   z-index: 5;
 }
 
 .bus-stop-box-interior {
-  height: 87px;
+  height: 130px;
   margin: auto;
   width: 87.6%;
 }
@@ -73,40 +79,70 @@ p {
   display: inline-block;
   float: left;
   height: 16px;
-  margin: 46px 20px 23px 0px;
+  margin: 48px 20px 23px 0px;
   width: 16px;
   z-index: 10;
 }
 
-.bus-stop-name {
-  margin: auto;
+.input {
+  border: none;
+  border-radius: 2px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 45%));
+  font-size: 16px;
   float: left;
-  padding: 44px 0 23px 0;
-  width: 240px;
+  height: 30px;
+  width: 76%;
+}
+
+.start {
+  color: #2F3132;
+  margin: 40px auto 7px auto;
+  padding-left: 10px;
+}
+
+.end {
+  color: rgba(47, 49, 50, 50%);
+  padding-left: 10px;
+}
+
+.switch-arrows {
+  background: url(../images/switch-arrows.png) no-repeat;
+  background-size: contain;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  margin: -20px 0px 0px 0px;
+  width: 23px;
+  z-index: 10;
+}
+
+.map {
+  background: url(../images/map.png) no-repeat;
+  background-size: cover;
+  height: 280px;
+  margin: -280px 0 0 0 ;
+  max-width: 500px;
+  position: fixed;
+  width: 100%;
 }
 
 .bus:hover {
-  background-color: #268335;
-  /*color: #3a4241;
+  background-color: #188D63;
+  /*color: #3a4241; In case I change background-color and want to change text color.
   font-weight: 500;*/
+}
+
+.eastbound {
+  margin-top: 410px;
 }
 
 .top {
     border-bottom: 1px solid #C4C4C4;
 }
 
-.group h1 {
-  color: #3a4241;
-  font-size: 16px;
-  font-weight: 600;
-  margin: auto;
-  text-transform: uppercase;
-  padding: 10px 0;
-  width: 87.6%;
-}
-
 .bus {
     background-color: #3a4241;
+    max-width: 500px;
     z-index: -1;
   }
 
@@ -116,70 +152,119 @@ p {
   width: 87.6%;
 }
 
-
-
 .busnumber {
   font-weight: 400;
-  width: 175px;
+  float: left;
+  font-size: 24px;
+  padding: 14px 0 10px 0;
+  width: 150px;
 }
 
 .destination {
   font-weight: 400;
   text-align: left;
-  padding-top: 63px;
-  width: 175px;
+  padding-top: 30px;
+  width: 180px;
+}
+
+.direction {
+  color: #dadada;
+  float: left;
+  font-size: 14px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
 
 .frequency {
-    float: right;
-    margin: 23px 0 0 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 38px;
-  }
+  float: right;
+  margin: 14px 6.2% 0 0;
+  text-transform: uppercase;
+  width: 46px;
+}
+
+.arrives-circle {
+  color: #3a4241;
+  border-radius: 100%;
+  font-weight: 500;
+  height: 54px;
+  text-align: center;
+  width: 54px;
+}
+
+.red {
+  background-color: #F18080;
+}
+
+.yellow {
+    background-color: #F0D172;
+}
+
+.green {
+  background-color: #77DB87;
+}
+
+.mins {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.mins-text, .next {
+  font-size: 12px;
+}
+
+.next {
+  clear: right;
+  color: #dadada;
+  float: right;
+  line-height: 10px;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  width: 80px;
+}
 
 .reroute {
-  background-color: #F0D172;
+  color: #F0D172;
 }
 
 .na {
     float: right;
-    margin: 23px 0 0 0;
+    margin: 32px 6.2% 0 0;
     text-align: center;
     text-transform: uppercase;
     width: 38px;
   }
 
-.outofservice {
-  background-color: #F18080;
+.out-of-service {
+  color: #F18080;
 }
 
 .resumes {
   float: right;
-  margin: 23px 0 0 0;
+  margin: 14.6px 3% 0 0;
   text-align: center;
   text-transform: uppercase;
   width: 55px;
 }
 
-.mins {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-  }
+.time {
+  padding: 15px 0;
+}
 
 .navbar {
     background: url(../images/navbar.png) no-repeat center;
     background-size: cover;
     bottom: 0;
     height: 43px;
+    margin: auto;
+    max-width: 500px;
     position: fixed;
     width: 100%;
     z-index: 10;
   }
 
-
-  /* Nexus Tablets */
+/* Don't need these media queries
+  /* Nexus Tablets
 
   @media screen and (min-width: 601px) {
 h1 {
@@ -211,9 +296,8 @@ p, .group h1 {
   padding-top: 61px;
   width: 300px;
 }
-}
 
-/* iPad */
+/* iPad
 
 @media screen and (min-width: 768px) {
 h1 {
@@ -231,6 +315,11 @@ h3 {
 
 p, .group h1 {
   font-size: 24px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .back-arrow {
@@ -263,3 +352,12 @@ p, .group h1 {
     line-height: 26px;
   }
 }
+
+@media screen and (max-width: 800px) {
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+}
+
+*/
